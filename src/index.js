@@ -18,15 +18,22 @@
 //alert("Hi " + name + " you are "+ age + " years old and you live " + place);
 //alert(`hi ${name} you are ${age} years old and we will keep in touch via your email ${mail}`);
 
-function changeButtonStyle(){
-    button.style.backgroundColor ="teal";
-    button.style.color = "black";
+//function changeButtonStyle(){
+  //  button.style.backgroundColor ="teal";
+    //button.style.color = "black";
+
+
+//let button = document.querySelector ("button");
+
+
+//button.addEventListener("mouseleave", changeButtonStyle);
+
+function showItems(){
+    let image = document.querySelector(".image1");
+    image.computedStyleMap.display = "block";
+    let num2 = document.querySelector(".close");
+    num2.style.display = "block";
 }
 
-let button = document.querySelector ("button");
-
-
-button.addEventListener("mouseleave", changeButtonStyle);
-
-
-
+let num1 = document.querySelector (".open");
+num1.addEventLister("click", showItems)
